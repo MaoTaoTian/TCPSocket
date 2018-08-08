@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TKTestNetworkController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hdt-2K-tw4">
+                    <rect key="frame" x="37.5" y="40" width="74" height="30"/>
+                    <state key="normal" title="ACTION00"/>
+                    <connections>
+                        <action selector="action:" destination="-1" eventType="touchUpInside" id="Uis-0H-gEG"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7rt-G9-g82">
+                    <rect key="frame" x="262.5" y="40" width="73" height="30"/>
+                    <state key="normal" title="ACTION02"/>
+                    <connections>
+                        <action selector="action2:" destination="-1" eventType="touchUpInside" id="gHw-x9-c2H"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aud-hW-hO9">
+                    <rect key="frame" x="151.5" y="40" width="71" height="30"/>
+                    <state key="normal" title="ACTION01"/>
+                    <connections>
+                        <action selector="action1:" destination="-1" eventType="touchUpInside" id="NhB-QO-odk"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="7rt-G9-g82" firstAttribute="leading" secondItem="aud-hW-hO9" secondAttribute="trailing" constant="40" id="79x-0E-pRE"/>
+                <constraint firstItem="aud-hW-hO9" firstAttribute="leading" secondItem="hdt-2K-tw4" secondAttribute="trailing" constant="40" id="JLK-nj-aiI"/>
+                <constraint firstItem="aud-hW-hO9" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="NY9-fs-ZEa"/>
+                <constraint firstItem="aud-hW-hO9" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="20" id="PKb-f6-Kpy"/>
+                <constraint firstItem="hdt-2K-tw4" firstAttribute="centerY" secondItem="aud-hW-hO9" secondAttribute="centerY" id="dQW-ec-4qb"/>
+                <constraint firstItem="7rt-G9-g82" firstAttribute="centerY" secondItem="aud-hW-hO9" secondAttribute="centerY" id="fiO-bn-zn5"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+        </view>
+    </objects>
+</document>
